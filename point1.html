@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">  
+    <head>
+        <script src="point1.js"></script>
+    </head>
+    <body>
+        <label for="placa">Bus:</label>
+        <input id="placa" type="text"/>
+        <br/>
+        <label for="ruta">Ruta:</label>
+        <Select id="ruta" type="text" label="Ruta" >
+            <option value="A">A</option>
+            <option value="B">B</option>
+        </Select>
+        <br/>
+        <label for="pasajeros">pasajeros:</label>
+        <input id="pasajeros" type="number"/>
+        <br/>
+        Total:  <p id="result"></p>
+
+        <button name="click" onclick="multiply();"> Calcular </button>
+    </body>
+</html>

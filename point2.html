@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">  
+    <head>
+        <script src="point2.js"></script>
+    </head>
+    <body>
+        <label for="tipotrabajador">Trabajo:</label>
+        <Select id="tipotrabajador" type="text" label="Tipo Trabajador" value="Fijo" onchange="changetype();">
+            <option value="Fijo">Fijo</option>
+            <option value="Temporal">Temporal</option>
+        </Select>
+        <br/>
+        <label for="nombre">Nombre:</label>
+        <input id="nombre" type="text"/>
+        <br/>
+        <label id="lhoras"  for="horas">Horas trabadas:</label>
+        <input id="horas" type="number"/>
+        <br/>
+        <label id="lsalariohora" for="salariohora">Salario Basico Hora:</label>
+        <input id="salariohora" type="number"/>
+        <br/>
+        <label id="ldeducciones" for="deducciones">Deducciones:</label>
+        <input id="deducciones" type="number"/>
+        <br/>
+        <label id="lbonificaciones" for="bonificaciones">bonificaciones:</label>
+        <input id="bonificaciones" type="number"/>
+        <br/>
+        <label id="lhorastabajadas"  for="horastabajadas" style="visibility:hidden">Horas trabajadas:</label>
+        <input id="horastabajadas" type="number" style="visibility:hidden"/>
+        <br/>
+        
+       <p id="result"></p>
+
+        <button name="click" onclick="calculate();"> Calcular </button>
+    </body>
+</html>
